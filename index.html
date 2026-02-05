@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Une surprise pour ta ursula ou ton moignon 💝</title>
+    <!-- Open Graph / Partage -->
+<meta property="og:title" content="Joyeuse Saint-Valentin 💖">
+<meta property="og:description" content="J’ai une surprise pour toi 💝 clique pour la découvrir">
+<meta property="og:image" content="./img.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tonsite.com">
+<link rel="icon" type="image/png" href="img.jpg">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Effets décoratifs -->
+<div class="decor">
+    <div class="garland left"></div>
+    <div class="garland right"></div>
+</div>
+
+<div class="petals"></div>
+
+
+<!-- PAGE 1 : CADEAU -->
+<section id="pageGift" class="page active">
+    <div class="text-center">
+        <i class='bx bxs-gift gift-icon'></i>
+        <h2>Cadeau spécial 🎁</h2>
+        <p>Clique ici pour voir ta surprise</p>
+        <button class="btn btn-danger mt-3" onclick="showNamePage()">🎀 Ouvrir</button>
+    </div>
+</section>
+
+<!-- PAGE 2 : PRENOM -->
+<section id="pageName" class="page">
+    <div class="container text-center">
+        <h2>Entre ton prénom 💖</h2>
+        <input type="text" id="nameInput" class="form-control mt-3" placeholder="Ton prénom">
+        <button class="btn btn-danger mt-4" onclick="showQuestion()">Continuer</button>
+    </div>
+</section>
+
+<!-- PAGE 3 : QUESTION -->
+<section id="pageQuestion" class="page">
+    <div class="hearts"></div>
+
+    <div class="container question-box text-center">
+        <h2 id="questionText"></h2>
+
+        <div class="mt-4">
+            <button id="yesBtn" class="btn btn-success me-3">Oui ❤️</button>
+            <button id="noBtn" class="btn btn-secondary">Non 💔</button>
+        </div>
+
+        <div id="result" class="mt-4"></div>
+
+        <!-- PARTAGE -->
+        <div class="share mt-4">
+            <p style="color: black;">Partage cette belle surprise 💖</p>
+            <a id="whatsappShare" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a id="facebookShare" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+        </div>
+    </div>
+</section>
+<footer class="signature">
+    Fait avec ❤️ par <span>J29 Fozet / zeus</span> — © 2026
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
